@@ -1,0 +1,28 @@
+.h-100 {
+    height: 100% !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.fixed-height {
+    height: calc(100vh - 50px);
+}
+
+.min-height {
+    min-height: calc(100vh - 60px);
+}
+
+.position-relative {
+    position: relative;
+}
+
+.custom-th {
+    width: 200px;
+    min-width: 200px;
+}
+
+.custom-mb{
+    margin-bottom: 60px;
+}
