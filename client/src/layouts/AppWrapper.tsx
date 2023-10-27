@@ -50,12 +50,14 @@ export default function AppWrapper(props: any) {
             asideOffsetBreakpoint="sm"
             padding={0}
             header={
-                <Header height={{ base: 50, md: 60 }} p="md" sx={theme => ({
+                <Header height={{ base: 60, md: 70 }} px="md" sx={theme => ({
                     background: getTheme(theme) ? theme.colors.dark[6] : "#d3d6e9"
                 })}>
                     <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: "space-between" }}>
 
-                        <Group align="center">
+                        <Group align="center" style={{
+                            height: "100%"
+                        }}>
                             <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
                                 <Burger
                                     opened={opened}
@@ -66,6 +68,8 @@ export default function AppWrapper(props: any) {
                             </MediaQuery>
                             <Anchor component={Link} to="/" sx={{
                                 textDecoration: "none !important",
+                                height: "100%",
+                                width: "120px",
                                 ".lis": {
                                     color: getTheme(theme) ? theme.colors.gray[1] : theme.colors.dark[8],
                                     textDecoration: "none",
@@ -74,10 +78,13 @@ export default function AppWrapper(props: any) {
                                     }
                                 }
                             }}>
-                                <Stack spacing={-10}>
+                                <img src={'/Shiftlogo.png'} style={{
+                                    maxHeight: '90%'
+                                }} />
+                                {/* <Stack spacing={-10}>
                                     <Title order={2} className="lis">SaL</Title>
                                     <Text size="xs" className="lis">DONATE</Text>
-                                </Stack>
+                                </Stack> */}
                             </Anchor>
                             <Divider orientation='vertical' />
                             {

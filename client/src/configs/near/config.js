@@ -23,9 +23,9 @@ function getConfig(env) {
       networkId: 'testnet',
       nodeUrl: 'https://rpc.testnet.near.org',
       contractName: CONTRACT_NAME,
-      walletUrl: 'https://wallet.testnet.near.org',
+      walletUrl: 'https://testnet.mynearwallet.com',
       helperUrl: 'https://helper.testnet.near.org',
-      explorerUrl: 'https://explorer.testnet.near.org',
+      explorerUrl: 'https://testnet.nearblocks.io',
       provider: "https://archival-rpc.testnet.near.org",
     }
   case 'betanet':
